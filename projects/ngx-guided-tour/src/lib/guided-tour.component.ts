@@ -150,6 +150,7 @@ export class GuidedTourComponent implements AfterViewInit, OnDestroy {
     public ngAfterViewInit(): void {
         this.guidedTourService.guidedTourCurrentStepStream.subscribe((step: TourStep) => {
             this.currentTourStep = step;
+            this.updateStepLocation();
             if (step && step.selector) {
                 const selectedElement = this.dom.querySelector(step.selector);
                 if (selectedElement) {
