@@ -14,7 +14,7 @@
         "e2e": "ng e2e",
         "publish": "cp README.md dist/ngx-guided-tour/README.md && cd dist/ngx-guided-tour && npm publish"
     },
-    "private": true,
+    "private": false,
     "dependencies": {
         "@angular/animations": "^13.0.0",
         "@angular/common": "^13.0.0",
